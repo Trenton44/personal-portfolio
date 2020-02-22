@@ -2,18 +2,30 @@ body {
   margin: 0px;
   background-color: #302f2e;
   color: white;
+  width: 100vw;
+  margin-bottom: 50px;
 }
-body ul {
+main ul {
   display: block;
 }
-body h1 {
+main h1 {
   text-align: center;
+  font-family: fantasy;
+  font-size: 40px;
 }
-body ul li {
+main ul li {
   display: inline-block;
   padding: 5%;
   margin-left: 1%;
   background-color: #2b2b29;
+}
+main p {
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-style: normal;
+  text-align: center;
+  font-family: sans-serif;
 }
 menu {
   overflow: hidden;
@@ -24,6 +36,7 @@ menu {
   padding: 0px;
 }
 menu img {
+  position: relative;
   display: inline-block;
   float: left;
   margin-left: 10%;
@@ -32,9 +45,21 @@ menu img {
   height: 70%;
 }
 menu p {
+  position: relative;
   display: inline-block;
   margin-top: 8%;
   margin-left: 5%;
   padding: 2%;
   background-color: grey;
+}
+footer {
+  display: block;
+}
+footer ul {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  margin: 0px;
+  padding-top: 10%;
+  float: right;
 }
