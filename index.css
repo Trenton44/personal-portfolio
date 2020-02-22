@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  background-color: #302f2e;
+  color: white;
+}
+body ul {
+  display: block;
+}
+body h1 {
+  text-align: center;
+}
+body ul li {
+  display: inline-block;
+  padding: 5%;
+  margin-left: 1%;
+  background-color: #2b2b29;
+}
+menu {
+  overflow: hidden;
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+menu img {
+  display: inline-block;
+  float: left;
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  height: 70%;
+}
+menu p {
+  display: inline-block;
+  margin-top: 8%;
+  margin-left: 5%;
+  padding: 2%;
+  background-color: grey;
+}
