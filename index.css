@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #302f2e;
+  background-color: #12171c;
   color: white;
   width: 100vw;
   margin-bottom: 50px;
@@ -14,18 +14,25 @@ main h1 {
   font-size: 40px;
 }
 main ul li {
-  display: inline-block;
+  display: inline;
+}
+main ul li a {
+  color: white;
   padding: 5%;
-  margin-left: 1%;
-  background-color: #2b2b29;
+  margin: 1%;
+  display: inline-block;
+  text-decoration: none;
 }
 main p {
+  postion: absolute;
   margin: auto;
   padding-left: 5%;
   padding-right: 5%;
   font-style: normal;
   text-align: center;
   font-family: sans-serif;
+  line-height: 250%;
+
 }
 menu {
   overflow: hidden;
@@ -52,14 +59,14 @@ menu p {
   padding: 2%;
   background-color: grey;
 }
-footer {
-  display: block;
+#Webify {
+    background-image: url("Spotify_Icon_RGB_Green.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
-footer ul {
-  position: absolute;
-  display: inline-block;
-  height: 100%;
-  margin: 0px;
-  padding-top: 10%;
-  float: right;
+#Javafy {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
