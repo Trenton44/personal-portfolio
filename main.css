@@ -43,13 +43,13 @@ nav ul li:hover {
 }
 #ProjectContent{
   display: none;
-  padding-top:5%;
+  padding: 0px;
   width: 80%;
   margin: auto;
 }
 #AboutContent{
   display: none;
-  padding-top:5%;
+  padding: 0px;
   width: 80%;
   margin: auto;
 }
@@ -70,9 +70,18 @@ main section{
 }
 main section h2 {
   text-align: center;
+  font-size: 350%;
 }
 main section p {
   text-align: center;
+  font-size: 150%;
+  font-family: monospace;
+  line-height: 200%;
+}
+main section img {
+  width: 25%;
+  height: 40%;
+  float: left;
 }
 main h1 {
   font-family: monospace;
