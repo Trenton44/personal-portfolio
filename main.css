@@ -1,6 +1,6 @@
 
 html {
-  background-image: url("Gos5.png");
+  background-image: url("budgetCar.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,6 +41,18 @@ nav ul li a {
 nav ul li:hover {
   transform: scale(1.2);
 }
+#ProjectContent{
+  display: none;
+  padding-top:5%;
+  width: 80%;
+  margin: auto;
+}
+#AboutContent{
+  display: none;
+  padding-top:5%;
+  width: 80%;
+  margin: auto;
+}
 
 main {
   animation-name: tester;
@@ -49,6 +61,18 @@ main {
   display: block;
   padding-top:15%;
   width: 20%;
+}
+main section{
+  width: 100%;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+}
+main section h2 {
+  text-align: center;
+}
+main section p {
+  text-align: center;
 }
 main h1 {
   font-family: monospace;

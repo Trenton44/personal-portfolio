@@ -2,18 +2,50 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript">
+      function loadHome(){
+        document.getElementById("HomeContent").style.display = "block";
+        document.getElementById("AboutContent").style.display = "none";
+        document.getElementById("ProjectContent").style.display = "none";
+        console.log("Homepage loaded.");
+      }
+      function loadAbout(){
+        document.getElementById("HomeContent").style.display = "none";
+        document.getElementById("AboutContent").style.display = "block";
+        document.getElementById("ProjectContent").style.display = "none";
+        console.log("About loaded.");
+      }
+      function loadProjects(){
+        document.getElementById("HomeContent").style.display = "none";
+        document.getElementById("AboutContent").style.display = "none";
+        document.getElementById("ProjectContent").style.display = "block";
+        console.log("Projects loaded.");
+      }
+    </script>
     <title></title>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a  href="main.html">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a onclick="loadHome()">Home</a></li>
+        <li><a onclick="loadAbout()">About</a></li>
+        <li><a onclick="loadProjects()">Projects</a></li>
       </ul>
     </nav>
-    <main>
-      <h1 onclick="runscript">Welcome</h1>
+    <main id="HomeContent">
+      <h1>Welcome</h1>
+    </main>
+    <main id="AboutContent">
+      <section>
+        <h2>Tester</h2>
+        <p>This is a temporary test of the agps system. Please advise, do not approach scp's 207 or 1913. Thank you</p>
+      </section>
+    </main>
+    <main id="ProjectContent">
+      <section>
+        <h2>Tester</h2>
+        <p>This is a temporary test of the agps system. Please advise, do not approach scp's 207 or 1913. Thank you</p>
+      </section>
     </main>
   </body>
 </html>
