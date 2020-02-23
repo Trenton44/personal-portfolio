@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("htmlbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  backdrop-filter: grayscale(100%);
+}

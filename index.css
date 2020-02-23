@@ -17,11 +17,16 @@ main ul li {
   display: inline;
 }
 main ul li a {
+  background-color: grey;
   color: white;
   padding: 5%;
   margin: 1%;
   display: inline-block;
   text-decoration: none;
+  transition: transform 1s;
+}
+main ul li a:hover {
+  transform: scale(1.2);
 }
 main p {
   postion: absolute;
