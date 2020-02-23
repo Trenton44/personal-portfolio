@@ -2,33 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript">
-      function loadHome(){
-        document.getElementById("HomeContent").style.display = "block";
-        document.getElementById("AboutContent").style.display = "none";
-        document.getElementById("ProjectContent").style.display = "none";
-        document.getElementById("Guide").style.display = "none";
-        console.log("Homepage loaded.");
-      }
-      function loadAbout(){
-        document.getElementById("HomeContent").style.display = "none";
-        document.getElementById("AboutContent").style.display = "block";
-        document.getElementById("ProjectContent").style.display = "none";
-        document.getElementById("Guide").style.display = "none";
-        console.log("About loaded.");
-      }
-      function loadProjects(){
-        document.getElementById("HomeContent").style.display = "none";
-        document.getElementById("AboutContent").style.display = "none";
-        document.getElementById("ProjectContent").style.display = "block";
-        document.getElementById("Guide").style.display = "none";
-        console.log("Projects loaded.");
-      }
-      function loadSiteGuide(){
-        document.getElementById("WelcomeSign").style.display = "none";
-        document.getElementById("Guide").style.display = "block";
-      }
-    </script>
+    <script src="main.js"></script>
     <title></title>
   </head>
   <body>
@@ -75,5 +49,9 @@
   			<li><a id="Javafy"; href="https://github.com/KiMage44/GameofSpeed">Game of Speed</a></li>
   		</ul>
     </main>
+    <script type="text/javascript">
+      saveWindow(window);
+      console.log("Saved.");
+    </script>
   </body>
 </html>
