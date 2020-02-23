@@ -45,7 +45,7 @@ nav ul li:hover {
   display: none;
   padding: 0px;
   width: 80%;
-  margin: auto;
+  margin: 0px;
 }
 #AboutContent{
   display: none;
@@ -53,7 +53,12 @@ nav ul li:hover {
   width: 80%;
   margin: auto;
 }
-
+#Guide {
+  display: none;
+  padding: 0px;
+  width: 80%;
+  margin: auto;
+}
 main {
   animation-name: tester;
   animation-duration: 5s;
@@ -83,6 +88,10 @@ main section img {
   height: 40%;
   float: left;
 }
+main h2 {
+  color: white;
+  padding-left: 5%;
+}
 main h1 {
   font-family: monospace;
   font-size: 350%;
@@ -96,7 +105,24 @@ main h1 {
 main h1:hover {
   transform: scale(1.2);
 }
-
+main ul {
+  display: block;
+}
+main ul li {
+  display: inline;
+}
+main ul li a {
+  background-color: grey;
+  color: white;
+  padding: 5%;
+  margin: 1%;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 1s;
+}
+main ul li a:hover {
+  transform: scale(1.2);
+}
 @keyframes tester {
   from {opacity: 0;}
   to {opacity: 1;}

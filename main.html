@@ -7,19 +7,26 @@
         document.getElementById("HomeContent").style.display = "block";
         document.getElementById("AboutContent").style.display = "none";
         document.getElementById("ProjectContent").style.display = "none";
+        document.getElementById("Guide").style.display = "none";
         console.log("Homepage loaded.");
       }
       function loadAbout(){
         document.getElementById("HomeContent").style.display = "none";
         document.getElementById("AboutContent").style.display = "block";
         document.getElementById("ProjectContent").style.display = "none";
+        document.getElementById("Guide").style.display = "none";
         console.log("About loaded.");
       }
       function loadProjects(){
         document.getElementById("HomeContent").style.display = "none";
         document.getElementById("AboutContent").style.display = "none";
         document.getElementById("ProjectContent").style.display = "block";
+        document.getElementById("Guide").style.display = "none";
         console.log("Projects loaded.");
+      }
+      function loadSiteGuide(){
+        document.getElementById("WelcomeSign").style.display = "none";
+        document.getElementById("Guide").style.display = "block";
       }
     </script>
     <title></title>
@@ -33,7 +40,15 @@
       </ul>
     </nav>
     <main id="HomeContent">
-      <h1>Welcome</h1>
+      <h1 id="WelcomeSign"; onclick="loadSiteGuide()">Welcome</h1>
+    </main>
+    <main id="Guide">
+      <section>
+        <p> Welcome to my personal Website! The navigation buttons at the top right of the screen will allow you to access different content on the site,
+        please feel free to click on any of them and explore.<br>
+        If at any point you feel lost, the Home button wil bring you right back to the starting page.
+        </p>
+      </section>
     </main>
     <main id="AboutContent">
       <section>
@@ -54,10 +69,11 @@
       </section>
     </main>
     <main id="ProjectContent">
-      <section>
-        <h2>Tester</h2>
-        <p>This is a temporary test of the agps system. Please advise, do not approach scp's 207 or 1913. Thank you</p>
-      </section>
+      <h2>Projects</h2>
+  		<ul>
+  			<li><a id="Webify"; href="https://github.com/KiMage44/Webify">Spoiderfy</a></li>
+  			<li><a id="Javafy"; href="https://github.com/KiMage44/GameofSpeed">Game of Speed</a></li>
+  		</ul>
     </main>
   </body>
 </html>
