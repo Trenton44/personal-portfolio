@@ -3,7 +3,7 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100vw;
-  background-image: url("htmlbackground.jpg");
+  background-image: url("placeholder.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,40 +14,31 @@ nav {
   postion: absolute;
   width: 100%;
   height: 10%;
-
 }
-nav h3 {
+nav ul li {
   display: inline-block;
   padding-right: 5%;
   float: right;
 }
-nav h3 a {
+nav ul li a {
   text-decoration: none;
   text-align: center;
   font-family: cursive;
   color: white;
   font-size: 125%;
 }
-#menuLoner {
-  padding-left:5%;
-  float: left;
-}
 
 main {
+  margin: auto;
   display: block;
   padding-top:15%;
+  width: 20%;
 }
 main h1 {
+  font-size: 175%;
+  border-style: solid;
+  border-width: thin;
   color: white;
+  padding: 2% 0px 2% 0px;
   text-align: center;
-}
-main ul {
-  padding: 2%;
-  text-align: center;
-}
-main ul li {
-  align: center;
-  color: white;
-  padding-left: 10%;
-  display: inline-block;
 }
