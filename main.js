@@ -28,3 +28,12 @@ function loadSiteGuide(){
   Window.document.getElementById("WelcomeSign").style.display = "none";
   Window.document.getElementById("Guide").style.display = "block";
 }
+function delayTime(){
+	setTimeout("displayTime()", 1000);
+}
+function displayTime(){
+	var date = new Date();
+	var timeDisplayed = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+	document.getElementById("Timer").innerHTML = timeDisplayed;
+	delayTime();
+}

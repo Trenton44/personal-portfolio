@@ -1,18 +1,17 @@
 
 html {
-  background-image: url("budgetCar.jpg");
+  background-image: url("placeholder.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  backdrop-filter: grayscale(100%);
+  backdrop-filter: grayscale(70%);
 }
 body {
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100vw;
-
 }
 nav {
   postion: absolute;
@@ -132,4 +131,12 @@ main ul li a:hover {
 @keyframes tester {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+#Timer {
+  font-size: 900%;
+  position: absolute;
+  color: white;
+  margin-left: 27%;
+  margin-top: 14%;
+  opacity: 30%;
 }
