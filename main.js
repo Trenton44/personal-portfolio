@@ -18,6 +18,7 @@ function loadAbout(){
   console.log("About loaded.");
   Window.document.getElementById("ResumePic").style.display = "block";
   Window.document.getElementById("Timer").style.display = "none";
+  console.log("Timer swapped for profile picture");
 
 }
 function loadProjects(){
