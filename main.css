@@ -38,12 +38,12 @@ nav ul li:hover {
   transform: scale(1.2);
 }
 
-#AboutContent{
+#AboutContent, #Guide {
   display: none;
   padding: 0px;
   width: 100%;
 }
-#AboutContent article {
+#AboutContent article, #Guide section {
   float: right;
   width: 40%;
   margin-right: 1%;
@@ -60,7 +60,7 @@ nav ul li:hover {
   font-size: 1.5vw;
   font-style: oblique;
 }
-#Guide {
+/*#Guide {
   display: none;
   padding: 0px;
   width: 80%;
@@ -78,7 +78,7 @@ nav ul li:hover {
   font-size: 150%;
   font-family: monospace;
   line-height: 200%;
-}
+}*/
 #ProjectContent {
   display: none;
   padding: 0px;
@@ -111,10 +111,8 @@ nav ul li:hover {
 main {
   animation-name: tester;
   animation-duration: 5s;
-  margin: auto;
   display: block;
-  padding-top:15%;
-  width: 20%;
+  width: 100vw;
 }
 main h1 {
   font-family: monospace;
@@ -125,6 +123,9 @@ main h1 {
   padding: 2% 0px 2% 0px;
   text-align: center;
   transition: transform 1s;
+  width: 20%;
+  float: right;
+  margin-right: 6%;
 }
 main h1:hover {
   transform: scale(1.2);

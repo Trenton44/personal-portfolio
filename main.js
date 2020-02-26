@@ -8,6 +8,8 @@ function loadHome(){
   Window.document.getElementById("AboutContent").style.display = "none";
   Window.document.getElementById("ProjectContent").style.display = "none";
   Window.document.getElementById("Guide").style.display = "none";
+  Window.document.getElementById("ResumePic").style.display = "none";
+  Window.document.getElementById("Timer").style.display = "block";
   console.log("Homepage loaded.");
 }
 function loadAbout(){
@@ -27,6 +29,8 @@ function loadProjects(){
   Window.document.getElementById("ProjectContent").style.display = "block";
   Window.document.getElementById("Guide").style.display = "none";
   console.log("Projects loaded.");
+  Window.document.getElementById("ResumePic").style.display = "none";
+  Window.document.getElementById("Timer").style.display = "block";
 }
 function loadSiteGuide(){
   Window.document.getElementById("WelcomeSign").style.display = "none";
