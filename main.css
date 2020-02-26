@@ -141,3 +141,12 @@ main h1:hover {
   margin-top: 27vh;
   opacity: 30%;
 }
+#ResumePic {
+  display: none;
+  width: 25vw;
+  height: 38vh;
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 17vh;
+  opacity: 70%;
+}

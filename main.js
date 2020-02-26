@@ -16,6 +16,9 @@ function loadAbout(){
   Window.document.getElementById("ProjectContent").style.display = "none";
   Window.document.getElementById("Guide").style.display = "none";
   console.log("About loaded.");
+  Window.document.getElementById("ResumePic").style.display = "block";
+  Window.document.getElementById("Timer").style.display = "none";
+
 }
 function loadProjects(){
   Window.document.getElementById("HomeContent").style.display = "none";
