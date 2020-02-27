@@ -60,29 +60,11 @@ nav ul li:hover {
   font-size: 1.5vw;
   font-style: oblique;
 }
-/*#Guide {
-  display: none;
-  padding: 0px;
-  width: 80%;
-  margin: auto;
-}
-#Guide section{
-  width: 100%;
-  color: white;
-  border-style: solid;
-  border-width: thin;
-}
-
-#Guide section p {
-  text-align: center;
-  font-size: 150%;
-  font-family: monospace;
-  line-height: 200%;
-}*/
 #ProjectContent {
   display: none;
+  float: right;
   padding: 0px;
-  width: 100%;
+  width: 40%;
   margin: 0px;
 }
 #ProjectContent h2 {
@@ -91,6 +73,7 @@ nav ul li:hover {
   text-align: center;
 }
 #ProjectContent  ul {
+  float: right;
   display: block;
 }
 #ProjectContent  ul li {
