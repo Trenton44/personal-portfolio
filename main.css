@@ -64,15 +64,22 @@ nav ul li:hover {
   display: none;
   float: right;
   padding: 0px;
-  width: 40%;
+  width: 35%;
   margin: 0px;
 }
 #ProjectContent h2 {
+  width: 70%;
+  margin-left: 10%;
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
+  font-family: monospace;
+  margin-top: 0px;
+  border-bottom: solid;
+  border-width: thin;
 }
 #ProjectContent  ul {
+  width: 100%;
   float: right;
   display: block;
 }
@@ -82,7 +89,7 @@ nav ul li:hover {
 #ProjectContent  ul li a {
   background-color: black;
   color: white;
-  padding: 5%;
+  padding: 4%;
   margin: 1%;
   display: inline-block;
   text-decoration: none;
