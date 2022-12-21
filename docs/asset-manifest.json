@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c16b58d.css",
+    "main.js": "/static/js/main.5009b969.js",
+    "static/media/analogTV-shrunk.png": "/static/media/analogTV-shrunk.09cf1bb221dca9300059.png",
+    "index.html": "/index.html",
+    "main.1c16b58d.css.map": "/static/css/main.1c16b58d.css.map",
+    "main.5009b969.js.map": "/static/js/main.5009b969.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c16b58d.css",
+    "static/js/main.5009b969.js"
+  ]
+}
