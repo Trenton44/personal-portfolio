@@ -1,0 +1,10 @@
+.project-button {
+    width: 25%;
+}
+.project-button>img {
+    width: 2em;
+    height: 2em;
+}
+.project-button>p {
+    margin: 0;
+}
