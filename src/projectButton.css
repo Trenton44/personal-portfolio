@@ -1,10 +1,11 @@
 .project-button {
     width: 25%;
+    height: auto;
 }
-.project-button>img {
-    width: 2em;
-    height: 2em;
+.project-button > img {
+    max-width: 3em;
+    height: auto;
 }
-.project-button>p {
+.project-button> p {
     margin: 0;
 }

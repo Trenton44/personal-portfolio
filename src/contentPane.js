@@ -58,7 +58,7 @@ class ContentSpace extends React.Component {
                         </Container>
                         <Container style={ContainerCSS}>
                             <ProjectButton src={CTEC295} alt="Link to my CTEC-295 Final Project" name="CTEC-295 Final" href="https://github.com/Trenton44/CTEC295-Project"/>
-                            <ProjectButton src={CyberStorm} alt="Link to the repo used for my CSC-442 Cyberstorm" name="CyberStorm Project" href="https://github.com/Trenton44/CSC-442-_-Cyberstorm"/>
+                            <ProjectButton src={CyberStorm} alt="Link to the repo used for my CSC-442 Cyberstorm" name="CSC-442 'CyberStorm'" href="https://github.com/Trenton44/CSC-442-_-Cyberstorm"/>
                         </Container>
                         </>
                     } />
