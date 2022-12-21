@@ -6,7 +6,7 @@ class projectButton extends React.Component {
     render(){
         return(
             <>
-            <Button variant="outline-light" className="project-button">
+            <Button variant="outline-light" className="project-button" href={this.props.href}>
                 <img src={this.props.src} alt={this.props.alt} />
                 <p>{this.props.name}</p>
             </Button>
