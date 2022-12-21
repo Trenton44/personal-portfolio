@@ -3,6 +3,7 @@ import Clock from './Clock';
 import ContentSpace from "./contentPane.js";
 import Navigation from "./navigation.js";
 import { Col, Container, Row } from "react-bootstrap";
+import { HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const FrameworkContainerCSS = {
@@ -22,16 +23,16 @@ class App extends React.Component {
     }
     render(){
         return(
-            <>
-            <Navigation />
-            <Container fluid style={FrameworkContainerCSS} >
-                <Row style={ContentFrameworkCSS}>
-                    <Col>
-                        <ContentSpace />
-                    </Col>
-                </Row>
-            </Container>
-            </>
+            <HashRouter hashType="slash">
+                <Navigation />
+                <Container fluid style={FrameworkContainerCSS} >
+                    <Row style={ContentFrameworkCSS}>
+                        <Col>
+                            <ContentSpace />
+                        </Col>
+                    </Row>
+                </Container>
+            </HashRouter>
         );
     }
 }

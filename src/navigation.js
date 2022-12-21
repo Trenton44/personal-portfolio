@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Container, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import GitHubImage from "./images/github-mark-white.png";
 const NavBrandCSS = {
@@ -17,9 +18,9 @@ class Navigation extends React.Component{
                     </Navbar.Brand>
                 </Container>
                 <Container style={{ justifyContent: "flex-end", gap: "2em" }} >
-                    <Navbar.Brand style={NavBrandCSS} href="#home" > Home </Navbar.Brand>
-                    <Navbar.Brand style={NavBrandCSS} href="#home" > About </Navbar.Brand>
-                    <Navbar.Brand style={NavBrandCSS} href="#home" > Projects </Navbar.Brand>
+                    <Nav.Link style={NavBrandCSS} as={Link} to="home" > Home </Nav.Link>
+                    <Nav.Link style={NavBrandCSS} as={Link} to="about" > About </Nav.Link>
+                    <Nav.Link style={NavBrandCSS} as={Link} to="projects" > Projects </Nav.Link>
                 </Container>
             </Navbar>
         );
