@@ -3,6 +3,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import GitHubImage from "./images/github-mark-white.png";
+import LinkedInImage from "./images/LinkedIn.png";
 const NavBrandCSS = {
     fontSize: "1.3em",
     color: "white",
@@ -10,11 +11,15 @@ const NavBrandCSS = {
 class Navigation extends React.Component{
     render(){
         return (
-            <Navbar bg="transparent" className="border-bottom">
-                <Container>
-                    <Navbar.Brand style = {{ color: "white", fontSize: "2.5em" }} href="https://github.com/Trenton44?tab=repositories" >
-                        <img width="60em" height="60em" className="d-inline-block align-top" src={GitHubImage} alt="The GitHub Logo" />
+            <Navbar bg="transparent" className="border-bottom" style={{ height: "8%" }}>
+                <Container style={{ justifyContent: "flex-start" }}>
+                    <Navbar.Brand style = {{ color: "white", fontSize: "1.5em" }} href="https://github.com/Trenton44/personal-portfolio" >
+                        <img width="30em" height="30em" className="d-inline-block align-top" src={GitHubImage} alt="The GitHub Logo" />
                         {" "}GitHub
+                    </Navbar.Brand>
+                    <Navbar.Brand style = {{ color: "white", fontSize: "1.5em" }} href="https://www.linkedin.com/in/trenton44/" >
+                        <img width="35em" height="30em" className="d-inline-block align-top" src={LinkedInImage} alt="The LinkedIn Logo" />
+                        {" "}LinkedIn
                     </Navbar.Brand>
                 </Container>
                 <Container style={{ justifyContent: "flex-end", gap: "2em" }} >
