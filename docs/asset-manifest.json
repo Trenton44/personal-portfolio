@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/docs/static/css/main.ed414b37.css",
-    "main.js": "/personal-portfolio/docs/static/js/main.5d75083b.js",
-    "static/media/analogTV-shrunk.png": "/personal-portfolio/docs/static/media/analogTV-shrunk.09cf1bb221dca9300059.png",
-    "static/media/Me.jpg": "/personal-portfolio/docs/static/media/Me.db43b3803861285c2ad1.jpg",
-    "static/media/DestinyLogo.png": "/personal-portfolio/docs/static/media/DestinyLogo.9cb9f6ea4d96ff2c9cac.png",
-    "static/media/CTEC-295-drawicon.png": "/personal-portfolio/docs/static/media/CTEC-295-drawicon.a6264a6110ca3a27cc5a.png",
-    "static/media/CSC-442-Cyberstorm.jpg": "/personal-portfolio/docs/static/media/CSC-442-Cyberstorm.eb5e5490aadc76fe0e8f.jpg",
-    "index.html": "/personal-portfolio/docs/index.html",
-    "main.ed414b37.css.map": "/personal-portfolio/docs/static/css/main.ed414b37.css.map",
-    "main.5d75083b.js.map": "/personal-portfolio/docs/static/js/main.5d75083b.js.map"
+    "main.css": "/personal-portfolio/static/css/main.83578177.css",
+    "main.js": "/personal-portfolio/static/js/main.2bb6c08c.js",
+    "static/media/analogTV-shrunk.png": "/personal-portfolio/static/media/analogTV-shrunk.09cf1bb221dca9300059.png",
+    "static/media/Me.jpg": "/personal-portfolio/static/media/Me.db43b3803861285c2ad1.jpg",
+    "static/media/DestinyLogo.png": "/personal-portfolio/static/media/DestinyLogo.9cb9f6ea4d96ff2c9cac.png",
+    "static/media/CTEC-295-drawicon.png": "/personal-portfolio/static/media/CTEC-295-drawicon.a6264a6110ca3a27cc5a.png",
+    "static/media/CSC-442-Cyberstorm.jpg": "/personal-portfolio/static/media/CSC-442-Cyberstorm.eb5e5490aadc76fe0e8f.jpg",
+    "index.html": "/personal-portfolio/index.html",
+    "main.83578177.css.map": "/personal-portfolio/static/css/main.83578177.css.map",
+    "main.2bb6c08c.js.map": "/personal-portfolio/static/js/main.2bb6c08c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed414b37.css",
-    "static/js/main.5d75083b.js"
+    "static/css/main.83578177.css",
+    "static/js/main.2bb6c08c.js"
   ]
 }
