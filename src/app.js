@@ -1,5 +1,5 @@
 import React from 'react';
-import Clock from './Clock';
+import TVOverlay from "./TVScreen.js";
 import ContentSpace from "./contentPane.js";
 import Navigation from "./navigation.js";
 import { Col, Container, Row } from "react-bootstrap";
@@ -8,13 +8,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const FrameworkContainerCSS = {
     flexGrow: 2,
-    marginLeft: "60%",
-    width: "40%"
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
 };
 const ContentFrameworkCSS ={
     height: "100%",
     alignItems: "flex-start",
-    paddingTop: "6%"
+    paddingTop: "6%",
+    paddingLeft: "3em",
+    paddingRight: "0.5em",
+    width: "40%"
 };
 
 class App extends React.Component {
@@ -26,12 +30,19 @@ class App extends React.Component {
             <HashRouter hashType="slash">
                 <Navigation />
                 <Container fluid style={FrameworkContainerCSS} >
+                    <Row style={{width: "60%"}}>
+                        <Col>
+                            <TVOverlay />
+                        </Col>
+                    </Row>
                     <Row style={ContentFrameworkCSS}>
                         <Col>
                             <ContentSpace />
                         </Col>
                     </Row>
+                    
                 </Container>
+                
             </HashRouter>
         );
     }
