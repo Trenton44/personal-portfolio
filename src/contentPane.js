@@ -1,11 +1,10 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectButton from "./projectButton.js";
-import GitHubImage from "./images/github-mark-white.png";
 import CTEC295 from "./images/CTEC-295-drawicon.png";
 import CyberStorm from "./images/CSC-442-Cyberstorm.jpg";
 import DestinyLogo from "./images/DestinyLogo.png";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 const ContainerCSS = {
     display: "flex",
@@ -26,29 +25,28 @@ class ContentSpace extends React.Component {
     render(){
         return(
             <>
-            <h2 className="border-bottom border-3" style={HeaderCSS}> Header </h2>
+            <h2 className="border-bottom border-3" style={HeaderCSS}>  </h2>
+            <Container style={{ paddingTop: "1em" }}>
                 <Routes>
+                    <Route exact path="/" component={() => (<redirect to="home" />)} />
                     <Route path="/home" element={
-                        <Container style={{ paddingTop: "1em" }}>
-                        <p style={{ color: "white", fontSize: "1.3em"}}>
+                        <p style={{ textAlign: "center", color: "white", fontSize: "1.3em"}}>
                             Welcome to my website!<br />
                             The navigtion bar will get you wherever you need to go,<br />feel free to explore!<br />
                         </p>
-                        </Container>
                     } />
                     <Route path="/about" element={
-                        <Container style={{ paddingTop: "1em" }}>
-                            <p style={{ color: "white", fontSize: "1.3em"}}> 
-                                Hello! Welcome to my website! I'm glad you're here!<br />
+                            <p style={{ textAlign: "center", color: "white", fontSize: "1.3em"}}> 
+                                Hello There!<br /> 
+                                Welcome to my website! I'm glad you're here!<br />
                                 My name is Trenton Choate.<br />
                                 If you're reading this, you've likely stumbled upon it through my GitHub or my resume. Thanks for taking the time to look! <br /><br />
-                                About Me: <br />
+                                A bit about Me: <br />
                                 I'm a 23 year old developer, currently working for IBM.<br />
                                 My strengths are in C++, NodeJs, and Javascript<br />
                                 When I'm not working on one of my projects, I'm usually playing games or watching a new show.<br />
                                 That's all for introductions, feel free to explore my work!
                             </p>
-                        </Container>
                     } />
                     <Route path="/projects" element={
                         <>
@@ -63,6 +61,7 @@ class ContentSpace extends React.Component {
                         </>
                     } />
                 </Routes>
+                </Container>
             </>
         );
     }
