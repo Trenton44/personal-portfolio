@@ -14,8 +14,4 @@ const PageFrameworkCSS = {
 };
 
 
-root.render(
-    <div style={PageFrameworkCSS}>
-        <App />
-    </div>
-);
+root.render(<App />);

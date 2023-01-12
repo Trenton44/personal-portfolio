@@ -4,28 +4,35 @@ import { Link } from "react-router-dom";
 
 import GitHubImage from "./images/github-mark-white.png";
 import LinkedInImage from "./images/LinkedIn.png";
-const NavBrandCSS = {
-    fontSize: "1.3em",
+const NavLinkCSS = {
+    fontSize: "1em",
     color: "white",
 };
+
+const NavBrandCSS = { 
+    color: "white", 
+    fontSize: "1em",
+    alignItems: "top"
+};
+
 class Navigation extends React.Component{
     render(){
         return (
-            <Navbar bg="transparent" className="border-bottom" style={{ height: "8%" }}>
+            <Navbar bg="transparent" className="border-bottom" style={{ height: "2.5em", fontSize: "1em" }}>
                 <Container style={{ justifyContent: "flex-start" }}>
-                    <Navbar.Brand style = {{ color: "white", fontSize: "1.5em" }} href="https://github.com/Trenton44/personal-portfolio" >
-                        <img width="30em" height="30em" className="d-inline-block align-top" src={GitHubImage} alt="The GitHub Logo" />
+                    <Navbar.Brand style={NavBrandCSS} href="https://github.com/Trenton44/personal-portfolio" >
+                        <img width="35em" height="35em" className="d-inline-block align-center" src={GitHubImage} alt="The GitHub Logo" />
                         {" "}GitHub
                     </Navbar.Brand>
-                    <Navbar.Brand style = {{ color: "white", fontSize: "1.5em" }} href="https://www.linkedin.com/in/trenton44/" >
-                        <img width="35em" height="30em" className="d-inline-block align-top" src={LinkedInImage} alt="The LinkedIn Logo" />
+                    <Navbar.Brand style={NavBrandCSS} href="https://www.linkedin.com/in/trenton44/" >
+                        <img width="45em" height="40em" className="d-inline-block align-center" src={LinkedInImage} alt="The LinkedIn Logo" />
                         {" "}LinkedIn
                     </Navbar.Brand>
                 </Container>
                 <Container style={{ justifyContent: "flex-end", gap: "2em" }} >
-                    <Nav.Link style={NavBrandCSS} as={Link} to="home" > Home </Nav.Link>
-                    <Nav.Link style={NavBrandCSS} as={Link} to="about" > About </Nav.Link>
-                    <Nav.Link style={NavBrandCSS} as={Link} to="projects" > Projects </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} as={Link} to="home" > Home </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} as={Link} to="about" > About </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} as={Link} to="projects" > Projects </Nav.Link>
                 </Container>
             </Navbar>
         );

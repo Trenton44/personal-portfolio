@@ -5,20 +5,15 @@ import { Container } from "react-bootstrap";
 import MyImage from "./images/Me.jpg";
 
 const TVScreenCSS = {
-    width: "48%",
-    height: "47%",
-    marginTop: "12%",
-    marginLeft: "24%",
-    padding: 0,
     alignSelf: "top",
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: "space-around",
+    alignItems: "center",
 };
 
 const ImageCSS ={
-    width: "100%",
-    height: "100%",
+    width: "60%",
+    height: "60%",
     filter: "grayscale(60%)",
     opacity: "70%"
 }

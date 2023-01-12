@@ -11,13 +11,14 @@ const FrameworkContainerCSS = {
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
+    height: "75%"
 };
 const ContentFrameworkCSS ={
     height: "100%",
     alignItems: "flex-start",
     paddingTop: "6%",
-    paddingLeft: "3em",
     paddingRight: "0.5em",
+    flexGrow: 2,
     width: "40%"
 };
 
@@ -30,11 +31,10 @@ class App extends React.Component {
             <HashRouter hashType="slash">
                 <Navigation />
                 <Container fluid style={FrameworkContainerCSS} >
-                    <Row style={{width: "60%"}}>
-                        <Col>
-                            <TVOverlay />
-                        </Col>
+                    <Row style={{ width: "60%", flexGrow: 1, }}>
+                        <TVOverlay />
                     </Row>
+                    <div style={{ flexBasis: "20%", flexGrow: 1,}}></div>
                     <Row style={ContentFrameworkCSS}>
                         <Col>
                             <ContentSpace />

@@ -21,6 +21,7 @@ const HeaderCSS = {
     margin: "auto"
 };
 
+
 class ContentSpace extends React.Component {
     render(){
         return(
@@ -30,13 +31,13 @@ class ContentSpace extends React.Component {
                 <Routes>
                     <Route exact path="/" component={() => (<redirect to="home" />)} />
                     <Route path="/home" element={
-                        <p style={{ textAlign: "center", color: "white", fontSize: "1.3em"}}>
+                        <p style={{textAlign: "center", color: "white", fontSize: "1em"}}>
                             Welcome to my website!<br />
                             The navigtion bar will get you wherever you need to go,<br />feel free to explore!<br />
                         </p>
                     } />
                     <Route path="/about" element={
-                            <p style={{ textAlign: "center", color: "white", fontSize: "1.3em"}}> 
+                            <p style={{textAlign: "center", color: "white", fontSize: "0.7em"}}> 
                                 Hello There!<br /> 
                                 Welcome to my website! I'm glad you're here!<br />
                                 My name is Trenton Choate.<br />

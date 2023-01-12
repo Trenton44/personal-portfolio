@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * React Component for tracking time, displayed as a <p> element.
+*/
 class Clock extends React.Component{
     constructor(props){
         super(props);
@@ -12,9 +15,7 @@ class Clock extends React.Component{
         this.setState({ time: new Date() }); 
     }
     render(){ 
-        return( 
-            <p style={{ fontSize: "4em", color: "white", margin: 0 }}>{this.state.time.toLocaleTimeString()}</p> 
-        ); 
+        return( <p style={{ fontSize: "2em", color: "white", margin: 0 }}>{this.state.time.toLocaleTimeString()}</p> ); 
     }
 }
 
