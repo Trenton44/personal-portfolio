@@ -15,7 +15,7 @@
 .expanded_menu_items {
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: flex-end !important;
     align-items: center;
     gap: 2em;
 }
