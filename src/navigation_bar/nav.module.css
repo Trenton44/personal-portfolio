@@ -1,0 +1,22 @@
+.navigation_bar {
+    font-size: 1em;
+    height: 2.5em;
+    position: initial !important;
+}
+
+.navigation_left_menu {
+    justify-content: flex-start !important;
+}
+.navigation_left_menu_items {
+    color: white !important;
+    font-size: 1em;
+    max-height: 100%;
+    align-items: top;
+}
+.navigation_left_menu_icons {
+    height: 2em;
+}
+.navigation_right_menu_items {
+    color: white !important;
+    font-size: 1em;
+}

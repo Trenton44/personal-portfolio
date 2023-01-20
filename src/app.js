@@ -1,7 +1,7 @@
 import React from 'react';
 import TVOverlay from "./TVScreen.js";
 import ContentSpace from "./contentPane.js";
-import Navigation from "./navigation.js";
+import NavigationBar from "./navigation_bar/nav.js";
 import { Col, Container, Row } from "react-bootstrap";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,7 +29,7 @@ class App extends React.Component {
     render(){
         return(
             <BrowserRouter basename="/personal-portfolio">
-                <Navigation />
+                <NavigationBar />
                 <Container fluid style={FrameworkContainerCSS} >
                     <Row style={{ width: "60%", flexGrow: 1, }}>
                         <TVOverlay />
