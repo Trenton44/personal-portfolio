@@ -3,7 +3,7 @@ import TVOverlay from "./TVScreen.js";
 import ContentSpace from "./contentPane.js";
 import Navigation from "./navigation.js";
 import { Col, Container, Row } from "react-bootstrap";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const FrameworkContainerCSS = {

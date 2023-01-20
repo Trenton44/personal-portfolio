@@ -30,9 +30,9 @@ class Navigation extends React.Component{
                     </Navbar.Brand>
                 </Container>
                 <Container style={{ justifyContent: "flex-end", gap: "2em" }} >
-                    <Nav.Link style={NavLinkCSS} href="/" > Home </Nav.Link>
-                    <Nav.Link style={NavLinkCSS} href="/about" > About </Nav.Link>
-                    <Nav.Link style={NavLinkCSS} href="/projects" > Projects </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} href={ process.env.PUBLIC_URL } > Home </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} href={ process.env.PUBLIC_URL + "/about" } > About </Nav.Link>
+                    <Nav.Link style={NavLinkCSS} href={ process.env.PUBLIC_URL + "/projects" } > Projects </Nav.Link>
                 </Container>
             </Navbar>
         );
