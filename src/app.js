@@ -28,7 +28,7 @@ class App extends React.Component {
     }
     render(){
         return(
-            <BrowserRouter>
+            <BrowserRouter basename="personal-portfolio">
                 <Navigation />
                 <Container fluid style={FrameworkContainerCSS} >
                     <Row style={{ width: "60%", flexGrow: 1, }}>
