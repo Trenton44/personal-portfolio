@@ -28,7 +28,7 @@ class App extends React.Component {
     }
     render(){
         return(
-            <BrowserRouter hashType="slash">
+            <BrowserRouter>
                 <Navigation />
                 <Container fluid style={FrameworkContainerCSS} >
                     <Row style={{ width: "60%", flexGrow: 1, }}>

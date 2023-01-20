@@ -29,8 +29,7 @@ class ContentSpace extends React.Component {
             <h2 className="border-bottom border-3" style={HeaderCSS}>  </h2>
             <Container style={{ paddingTop: "1em" }}>
                 <Routes>
-                    <Route exact path="/" component={() => (<redirect to="home" />)} />
-                    <Route path="/home" element={
+                    <Route path="/" element={
                         <p style={{textAlign: "center", color: "white", fontSize: "1em"}}>
                             Welcome to my website!<br />
                             The navigtion bar will get you wherever you need to go,<br />feel free to explore!<br />
