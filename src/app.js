@@ -3,7 +3,7 @@ import TVOverlay from "./TVScreen.js";
 import ContentSpace from "./contentPane.js";
 import Navigation from "./navigation.js";
 import { Col, Container, Row } from "react-bootstrap";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const FrameworkContainerCSS = {
@@ -28,7 +28,7 @@ class App extends React.Component {
     }
     render(){
         return(
-            <HashRouter hashType="slash">
+            <BrowserRouter hashType="slash">
                 <Navigation />
                 <Container fluid style={FrameworkContainerCSS} >
                     <Row style={{ width: "60%", flexGrow: 1, }}>
@@ -43,7 +43,7 @@ class App extends React.Component {
                     
                 </Container>
                 
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }

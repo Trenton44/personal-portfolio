@@ -1,5 +1,5 @@
 import React from 'react';
-import Clock from './Clock';
+import Clock from './Clock/Clock';
 import { Route, Routes } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import MyImage from "./images/Me.jpg";
