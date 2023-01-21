@@ -40,6 +40,7 @@ class SideBarMenu extends React.Component {
                 >
                 <p style={{color: "white" }}> Menu </p>
                 {this.props.children}
+                
             </div>
             </>
         );
