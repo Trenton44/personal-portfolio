@@ -1,5 +1,8 @@
-.clock-component{
-    font-size: 2em;
-    color: white;
-    margin: 0;
+.clock_component {
+    transform: rotate(-90deg);
+}
+.clock_circle {
+    cx: 50%;
+    cy: 50%;
+    fill: transparent;
 }
