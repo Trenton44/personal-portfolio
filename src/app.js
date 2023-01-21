@@ -1,48 +1,16 @@
-import React from 'react';
-import TVOverlay from "./TVScreen.js";
-import ContentSpace from "./contentPane.js";
+import React from "react";
 import NavigationBar from "./navigation_bar/nav.js";
-import { Col, Container, Row } from "react-bootstrap";
+import Clock from "./Clock/Clock.js";
 import { BrowserRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-const FrameworkContainerCSS = {
-    flexGrow: 2,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    height: "75%"
-};
-const ContentFrameworkCSS ={
-    height: "100%",
-    alignItems: "flex-start",
-    paddingTop: "6%",
-    paddingRight: "0.5em",
-    flexGrow: 2,
-    width: "40%"
-};
 
 class App extends React.Component {
-    constructor(props){
-        super(props);
-    }
+    constructor(props){ super(props); }
     render(){
         return(
             <BrowserRouter basename="/personal-portfolio">
                 <NavigationBar />
-                <Container fluid style={FrameworkContainerCSS} >
-                    <Row style={{ width: "60%", flexGrow: 1, }}>
-                        <TVOverlay />
-                    </Row>
-                    <div style={{ flexBasis: "20%", flexGrow: 1,}}></div>
-                    <Row style={ContentFrameworkCSS}>
-                        <Col>
-                            <ContentSpace />
-                        </Col>
-                    </Row>
-                    
-                </Container>
-                
+                <div>
+                </div>
             </BrowserRouter>
         );
     }
