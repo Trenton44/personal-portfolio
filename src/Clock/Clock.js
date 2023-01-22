@@ -10,9 +10,9 @@ class Clock extends React.Component{
             time: new Date(),
             levels: [
                 {
-                    getValue: function(date){ return date.getSeconds(); },
-                    increment: 60,
-                    color: "green",
+                    getValue: function(date){ return date.getHours(); },
+                    increment: 24,
+                    color: "red",
                 },
                 {
                     getValue: function(date){ return date.getMinutes(); },
@@ -20,14 +20,15 @@ class Clock extends React.Component{
                     color: "blue",
                 },
                 {
-                    getValue: function(date){ return date.getHours(); },
-                    increment: 24,
-                    color: "red",
+                    getValue: function(date){ return date.getSeconds(); },
+                    increment: 60,
+                    color: "green",
                 }
+                
             ],
-            radius: 10,
-            strokeSize: 2,
-            gap: 10
+            radius: 20,
+            strokeSize: 15,
+            gap: 30
         };
     }
     componentDidMount(){
@@ -36,7 +37,7 @@ class Clock extends React.Component{
     componentWillUnmount(){
         clearInterval(this.timerID);
     }
-    getRadius = () => this.state.radius+this.state.gap+this.state.strokeSize;
+    getRadius = (gap) => this.state.radius+(this.state.gap*gap)+this.state.strokeSize;
     tick = () => this.setState({ time: new Date() });
     clockStroke = (tick, radius, increment) => {
         let circ = 2*Math.PI*radius;
@@ -50,13 +51,16 @@ class Clock extends React.Component{
                 {this.state.levels.map((level, index) => 
                     <circle
                         key={ index }
-                        className={ css.clock_circle }
-                        r={ this.getRadius().toString()+"px" }
-                        color={ level.color }
+                        stroke={level.color}
+                        cx="50%" cy="50%"
+                        fill="transparent"
+                        r={ this.getRadius(index).toString()+"px" }
+                        
                         strokeWidth={ this.state.strokeSize }
-                        strokeDasharray={ this.clockStroke(level.getValue(this.state.time),this.getRadius(), level.increment) }
+                        strokeDasharray={ this.clockStroke(level.getValue(this.state.time), this.getRadius(index), level.increment) }
                     />
                 )}
+                <text cx="50%" cy="50%">{this.state.time.toDateString()}</text>
             </svg>
         );
     }

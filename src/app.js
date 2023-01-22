@@ -10,6 +10,7 @@ class App extends React.Component {
             <BrowserRouter basename="/personal-portfolio">
                 <NavigationBar />
                 <div>
+                    <Clock />
                 </div>
             </BrowserRouter>
         );

@@ -1,8 +1,7 @@
 .clock_component {
+    height: 500px;
+    width: 500px;
     transform: rotate(-90deg);
-}
-.clock_circle {
-    cx: 50%;
-    cy: 50%;
-    fill: transparent;
+    overflow-clip-margin: initial;
+    overflow: visible;
 }
