@@ -1,0 +1,21 @@
+.main_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+.main_box > h1 {
+    font-size: 4em;
+    border-bottom: 5px solid white;
+}
+.job_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.job_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

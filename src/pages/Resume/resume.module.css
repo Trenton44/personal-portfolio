@@ -1,0 +1,33 @@
+.top_component {
+    height: calc(100% - 5.5em);
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.timeline {
+    width: 25%;
+    float: left;
+}
+.main_box {
+    width: 75%;
+    float: right;
+    overflow-y: scroll;
+}
+.content_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 2;
+}
+.content_header {
+    min-height: 10%;
+}
+.content_footer{
+    min-height: 10%;
+}
+.content_box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
