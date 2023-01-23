@@ -1,12 +1,12 @@
 import React from "react";
 
-import GitHubImage from "../images/github-mark-white.png";
-import LinkedInImage from "../images/LinkedIn.png";
+import GitHubImage from "../../images/github-mark-white.png";
+import LinkedInImage from "../../images/LinkedIn.png";
 
 import SideBarMenu from "./sidebar/sidebar.js";
 import css from "./nav.module.css";
 
-class NavigationBar extends React.Component {
+class Navigation extends React.Component {
     constructor(props){ super(props); }
     render(){
         return(
@@ -26,6 +26,7 @@ class NavigationBar extends React.Component {
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/"}> Home </a>
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/about"}> About </a>
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/projects"}> Projects </a>
+                        <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/resume"}> Resume </a>
                     </SideBarMenu>
                 </div>
             </div>
@@ -33,4 +34,4 @@ class NavigationBar extends React.Component {
     }
 }
 
-export default NavigationBar;
+export default Navigation;

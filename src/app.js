@@ -1,17 +1,24 @@
 import React from "react";
-import NavigationBar from "./navigation_bar/nav.js";
-import Clock from "./Clock/Clock.js";
-import { BrowserRouter } from "react-router-dom";
+import Navigation from "./components/navigation/navigation.js";
+import Home from "./pages/home.js";
+import About from "./pages/about.js";
+import Projects from "./pages/projects.js";
+import Resume from "./pages/Resume/resume.js";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
     constructor(props){ super(props); }
     render(){
         return(
             <BrowserRouter basename="/personal-portfolio">
-                <NavigationBar />
-                <div>
-                    <Clock />
-                </div>
+                <Navigation />
+                <Routes>
+                    <Route default path="/" element={ <Home/> } />
+                    <Route path="/about" element= { <About /> } />
+                    <Route path="/projects" element= { <Projects /> } />
+                    <Route path="/resume" element= { <Resume /> } />
+                </Routes>
             </BrowserRouter>
         );
     }

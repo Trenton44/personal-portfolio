@@ -1,6 +1,7 @@
 .navigation_bar {
     position: initial !important;
-    max-height: 3.5em !important;
+    height: 5em !important;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,14 +29,15 @@
     max-height: 60%;
     margin: 0;
     display: inline-block;
-    
 }
 .left_menu_item > p {
+    font-size: 1.4em;
     color:white;
     margin: 0;
     display: inline-block;
 }
 .navigation_right_menu_items {
+    font-size: 1.5em;
     color: white;
     text-decoration: none;
 }
