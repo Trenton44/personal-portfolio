@@ -16,7 +16,7 @@
     justify-content: space-around;
 }
 .shortcut_links > a {
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 1% 2% 1% 2%;
     background-color:darkcyan;
 }
 .body {

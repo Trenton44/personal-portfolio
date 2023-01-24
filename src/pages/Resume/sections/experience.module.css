@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     color: white;
+    margin: 0 1em 0 1em;
 }
 .main_box > h1 {
     font-size: 4em;
