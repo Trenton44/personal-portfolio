@@ -3,15 +3,19 @@
     display: block;
     margin: 0;
     padding: 0;
+    
 }
 .timeline {
     width: 25%;
     float: left;
+    height: 100%;
 }
 .main_box {
     width: 75%;
+    height: 100%;
     float: right;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 .content_body {
     display: flex;
@@ -30,4 +34,5 @@
     justify-content: flex-start;
     flex-direction: column;
     height: 100%;
+    scroll-snap-align: start;
 }
