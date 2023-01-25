@@ -1,0 +1,7 @@
+.clock_component {
+    height: 500px;
+    width: 500px;
+    transform: rotate(-90deg);
+    overflow-clip-margin: initial;
+    overflow: visible;
+}

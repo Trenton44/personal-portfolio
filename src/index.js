@@ -5,13 +5,4 @@ import App from "./app.js";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-
-const PageFrameworkCSS = {
-    display: "flex",
-    flexDirection: "column",
-    height: "100%"
-};
-
-
 root.render(<App />);

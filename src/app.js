@@ -1,49 +1,23 @@
-import React from 'react';
-import TVOverlay from "./TVScreen.js";
-import ContentSpace from "./contentPane.js";
-import Navigation from "./navigation.js";
-import { Col, Container, Row } from "react-bootstrap";
-import { HashRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import Navigation from "./components/navigation/navigation.js";
+import Home from "./pages/home.js";
+import Projects from "./pages/projects.js";
+import Resume from "./pages/Resume/resume.js";
 
-const FrameworkContainerCSS = {
-    flexGrow: 2,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    height: "75%"
-};
-const ContentFrameworkCSS ={
-    height: "100%",
-    alignItems: "flex-start",
-    paddingTop: "6%",
-    paddingRight: "0.5em",
-    flexGrow: 2,
-    width: "40%"
-};
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
-    constructor(props){
-        super(props);
-    }
+    constructor(props){ super(props); }
     render(){
         return(
-            <HashRouter hashType="slash">
+            <BrowserRouter basename="/personal-portfolio">
                 <Navigation />
-                <Container fluid style={FrameworkContainerCSS} >
-                    <Row style={{ width: "60%", flexGrow: 1, }}>
-                        <TVOverlay />
-                    </Row>
-                    <div style={{ flexBasis: "20%", flexGrow: 1,}}></div>
-                    <Row style={ContentFrameworkCSS}>
-                        <Col>
-                            <ContentSpace />
-                        </Col>
-                    </Row>
-                    
-                </Container>
-                
-            </HashRouter>
+                <Routes>
+                    <Route default path="/" element={ <Home/> } />
+                    <Route path="/projects" element= { <Projects /> } />
+                    <Route path="/resume" element= { <Resume /> } />
+                </Routes>
+            </BrowserRouter>
         );
     }
 }
