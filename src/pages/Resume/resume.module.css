@@ -9,6 +9,7 @@
     width: 15%;
     float: left;
     height: 100%;
+    overflow-y: hidden !important;
 }
 .main_box {
     width: 85%;
