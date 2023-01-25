@@ -1,0 +1,9 @@
+.main_content {
+    height: calc(100% - 5.1em);
+    width: 80%;
+    margin: auto;
+}
+
+.project_container {
+    width: 100%;
+}
