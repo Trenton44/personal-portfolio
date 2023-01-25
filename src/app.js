@@ -1,7 +1,6 @@
 import React from "react";
 import Navigation from "./components/navigation/navigation.js";
 import Home from "./pages/home.js";
-import About from "./pages/about.js";
 import Projects from "./pages/projects.js";
 import Resume from "./pages/Resume/resume.js";
 
@@ -15,7 +14,6 @@ class App extends React.Component {
                 <Navigation />
                 <Routes>
                     <Route default path="/" element={ <Home/> } />
-                    <Route path="/about" element= { <About /> } />
                     <Route path="/projects" element= { <Projects /> } />
                     <Route path="/resume" element= { <Resume /> } />
                 </Routes>

@@ -38,9 +38,8 @@ class SideBarMenu extends React.Component {
                 className={css.hidden_menu_items} 
                 style={{ display: this.state.hidden ? "none" : "flex" }}
                 >
-                <p style={{color: "white" }}> Menu </p>
+                <h1> Menu </h1>
                 {this.props.children}
-                
             </div>
             </>
         );

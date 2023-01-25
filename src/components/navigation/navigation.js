@@ -24,7 +24,6 @@ class Navigation extends React.Component {
                 <div className={css.navigation_menu+" "+css.right_menu}>
                     <SideBarMenu>
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/"}> Home </a>
-                        <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/about"}> About </a>
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/projects"}> Projects </a>
                         <a className={css.navigation_right_menu_items} href={ process.env.PUBLIC_URL + "/resume"}> Resume </a>
                     </SideBarMenu>
