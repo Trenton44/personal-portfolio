@@ -1,7 +1,7 @@
 import React from "react";
 
 import css from "./summary.module.css";
-import MyPicture from "../../../images/PlaceholderPerson.jpg";
+import MyPicture from "../../../images/Me.jpg";
 
 class Summary extends React.Component{
     constructor(props){
@@ -11,7 +11,7 @@ class Summary extends React.Component{
         return(
             <div className={css.body}>
                 <div className={css.left_content}>
-                    <h1> Summary </h1>
+                    <h1 id="#Summary"> Summary </h1>
                     <p> Trenton is a software developer with skills in web development, particularly in the ReactJS framework, &
                     NodeJS. <br /> He has work experience with cloud computing, and is a certified AWS Developer Associate. Coming
                     from a background in Object-Oriented Programming, as a graduate from Bossier Parish Community College &
@@ -25,7 +25,7 @@ class Summary extends React.Component{
                     <div></div>
                 </div>
                 <div className={css.right_content}>
-                    <img id="my-portrait" src={MyPicture}/>
+                    <img className={css.my_picture} src={MyPicture}/>
                 </div>
             </div>
         );
