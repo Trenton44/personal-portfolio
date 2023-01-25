@@ -41,8 +41,6 @@ class Resume extends React.Component{
                     <div className={css.content_box}>
                         <Education />
                     </div>
-                    <div className={css.content_box}>
-                    </div>
                 </div>
             </div>
         );

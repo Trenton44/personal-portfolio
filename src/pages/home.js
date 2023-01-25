@@ -25,7 +25,7 @@ class Home extends React.Component {
                         <h4> Bachelor of Engineering, Cyber Engineering </h4>
                         <p> 
                             A software developer with a focus on web development, most notably in ReactJS & NodeJS <br />
-                            and in using the AWS Cloud, holding the AWS Developer Associate certification.
+                            and in using the <span><strong>AWS Cloud</strong></span>, holding the <span><strong>AWS Developer - Associate certification</strong></span>.
                         </p>
                         <a href="https://www.credly.com/users/trenton-choate"> View Credentials </a>
                     </div>
