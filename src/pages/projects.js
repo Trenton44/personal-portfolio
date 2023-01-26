@@ -1,17 +1,43 @@
 import React from "react";
 import css from "./projects.module.css";
-const placeholder = "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+
+import HiddenBlock from "../components/HiddenBlock/hiddenblock.js";
+import GitHubLogo from "../images/github-mark-white.png";
 class Projects extends React.Component {
     constructor(props){ super(props); }
     render(){
         return(
         <div className={css.main_content}>
-            <h1> UNDER CONSTRUCTION </h1>
-            <p style={{ fontSize: "1.3em" }}> please refer to my <span><a href="https://github.com/Trenton44">GitHub</a></span> in the meantime to see all the projects I have going on!</p>
+            <div className={css.project_content}>
+                <a style={{height: "100%"}} href="https://github.com/Trenton44/VexGate-API">
+                    <HiddenBlock src={GitHubLogo}>
+                        <InternalContent className={css.internal_project_content} title="VexGate API">
+                            <p> A project using the Bungie API to allow players to access and manage their inventory from the web. </p>
+                        </InternalContent>
+                    </HiddenBlock>
+                </a>
+            </div>
+            <div className={css.project_content}>
+                <a style={{height: "100%"}} href="https://github.com/Trenton44/GameofLife-WebAuto">
+                    <HiddenBlock src={GitHubLogo}>
+                        <InternalContent className={css.internal_project_content} title="Game of Life - Canvas">
+                            <p> Conway's Game of Life, built within an html canvas </p>
+                        </InternalContent>
+                    </HiddenBlock>
+                </a>
+            </div>
             
         </div>
         );
     }
 }
 
+function InternalContent(props){
+    return(
+        <div className={css.internal_project_content}>
+            <h1>{props.title}</h1>
+            {props.children}
+        </div>
+    );
+}
 export default Projects;
