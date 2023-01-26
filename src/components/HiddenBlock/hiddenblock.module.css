@@ -1,0 +1,74 @@
+.component_container {
+    flex-basis: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.visible_container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    outline-color: white;
+}
+
+.visible_image {
+    width: 100%;
+    height: 100%;
+}
+.hidden_container {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    right: 0;
+    z-index: -1;
+    backdrop-filter: blur(20px);
+    outline-color: rgb(23, 51, 112);
+}
+.hidden_content {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hidden_container, .visible_container {
+    outline-width: 10px;
+    outline-style: solid;
+    outline-offset: -10px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.component_container:hover {
+    translate: -150%;
+    transition: 1s;
+}
+
+.component_container:hover > .hidden_container {
+    animation-name: hidden_slide;
+    animation-duration: 1.5s;
+    translate: 90%;
+    width: 300%;
+    border-radius: 0;
+}
+
+@keyframes hidden_slide {
+    from {
+        translate: 0%;
+        width: 100%;
+        border-radius: 100%;
+    }
+    25% {
+        translate: 50%;
+        width: 150%;
+    }
+    to{
+        translate: 90%;
+        width: 300%;
+        border-radius: 0;
+    }
+}

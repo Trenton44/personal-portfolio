@@ -33,11 +33,14 @@ class Home extends React.Component {
             </div>
             <div style={{height: "400px", width: "100%"}}></div>
             <footer className={css.page_footer}>
-                <h1> Socials: </h1>
+                <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "space-between"}}>
+                    <a style={{textAlign: "right"}} href="https://commons.wikimedia.org/wiki/File:Usa-world-trade-center-skyscrapers-reflection-night-skyline-cityscape.jpg">Background Image Credit: Kozak4512</a>
+                    <a style={{textAlign: "right"}} href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+                </div>
+                
             </footer>
         </div>
         );
     }
 }
-
 export default Home;
