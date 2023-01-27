@@ -16,7 +16,7 @@ class Timeline extends React.Component {
     render(){
         return(
             <div id={this.props.id} className={this.props.className+"  "+css.timeline_container}>
-                { this.state.sections.map((section, index) => <p onClick={() => this.changeLocation(section)} className={css.timeline_item} key={index}> {section} </p>) }
+                { this.state.sections.map((section, index) => <a onClick={() => this.changeLocation(section)} className={css.timeline_item} key={index}> {section} </a>) }
             </div>
         );
     }
