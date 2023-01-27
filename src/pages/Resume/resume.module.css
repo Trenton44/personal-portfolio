@@ -36,4 +36,8 @@
     flex-direction: column;
     height: 100%;
     scroll-snap-align: center;
+    overflow-y: scroll;
+    overscroll-behavior: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
