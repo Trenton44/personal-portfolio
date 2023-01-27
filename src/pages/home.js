@@ -2,6 +2,9 @@ import React from "react";
 import css from "./home.module.css";
 import Me from "../images/Me.jpg";
 
+import LinkedInImage from "../images/LinkedIn.png";
+const GmailLogo = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg";
+
 class Home extends React.Component {
     constructor(props){ super(props); }
     render(){
@@ -33,9 +36,20 @@ class Home extends React.Component {
             </div>
             <div style={{height: "400px", width: "100%"}}></div>
             <footer className={css.page_footer}>
-                <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "space-between"}}>
-                    <a style={{textAlign: "right"}} href="https://commons.wikimedia.org/wiki/File:Usa-world-trade-center-skyscrapers-reflection-night-skyline-cityscape.jpg">Background Image Credit: Kozak4512</a>
-                    <a style={{textAlign: "right"}} href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+                <h1> Contact: </h1>
+                <div className={css.socials_content}>
+                    <a href="https://www.linkedin.com/in/trenton44/">
+                        <img src={LinkedInImage} />
+                        <p> LinkedIn </p>
+                    </a>
+                    <a href="mailto:tchoate44@gmail.com">
+                        <img src={GmailLogo} />
+                        <p>tchoate44@gmail.com</p>
+                    </a>
+                </div>
+                <div className={css.background_credit}>
+                    <a href="https://commons.wikimedia.org/wiki/File:Usa-world-trade-center-skyscrapers-reflection-night-skyline-cityscape.jpg">Background Image Credit: Kozak4512</a>
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
                 </div>
                 
             </footer>
