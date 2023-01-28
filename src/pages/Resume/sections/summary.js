@@ -7,6 +7,10 @@ class Summary extends React.Component{
     constructor(props){
         super(props);
     }
+    changeLocation = (urifrag) => {
+        window.location.hash = urifrag;
+        document.getElementById(window.location.hash).scrollIntoView();
+    };
     render(){
         return(
             <div className={css.body}>
@@ -20,7 +24,7 @@ class Summary extends React.Component{
                     </p>
                     <h3> Jump to a Section</h3>
                     <div className={css.shortcut_links}>
-                        {this.props.sections.map(section => <a key={section}> {section} </a>)}
+                        {this.props.sections.map(section => <a onClick={() => this.changeLocation(section)} key={section}> {section} </a>)}
                     </div>
                     <div></div>
                 </div>
