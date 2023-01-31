@@ -1,5 +1,6 @@
 import React from "react";
 
+import "../pages.css";
 import css from "./resume.module.css";
 
 import Timeline from "../../components/timeline/timeline.js";

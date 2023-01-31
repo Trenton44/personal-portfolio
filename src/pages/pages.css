@@ -1,0 +1,7 @@
+.content_container {
+    width: 100%;
+    height: calc(100% - 5.1em);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
