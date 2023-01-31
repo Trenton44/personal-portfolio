@@ -1,0 +1,46 @@
+.content_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(-45deg, rgb(23, 51, 112), rgb(21, 14, 14));
+    overflow-y: hidden;
+}
+.content_container > * {
+    height: 100%;
+}
+.image_container {
+    flex-basis: 40%;
+    flex-grow: 1.5;
+    flex-shrink: 2;
+}
+
+.image_box {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: visible;
+}
+.image_clipper {
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: translate(0, -20%) rotate(45deg);
+    scale: 2;
+}
+
+.image_clipper > img {
+    height: 100%;
+    max-width: 100%;
+    transform: rotate(-45deg) translate(0, 20%);
+    
+}
+
+.content_box  {
+    height: 100%;
+    flex-basis: 40%;
+}
