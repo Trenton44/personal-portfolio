@@ -1,4 +1,6 @@
 import React from "react";
+
+import "./pages.css";
 import css from "./projects.module.css";
 
 import HiddenBlock from "../components/HiddenBlock/hiddenblock.js";
