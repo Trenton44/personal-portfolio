@@ -17,16 +17,4 @@ class DImgC extends React.Component{
         );
     }
 }
-/*
-<div className={css.image_container}>
-    <div className={css.image_box}>
-        <div className={css.image_clipper}>
-            <img className={css.clipped_image} src={this.props.src} />
-        </div>
-    </div>
-</div>
-<div className={css.content_box}>
-    {this.props.children}
-</div>
-*/
 export default DImgC;

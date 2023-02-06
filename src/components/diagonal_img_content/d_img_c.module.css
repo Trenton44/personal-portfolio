@@ -16,8 +16,8 @@
 }
 
 .image_container > img {
-    height: 120%;
     width: 120%;
+    height: 100%;
 }
 
 .text_container {

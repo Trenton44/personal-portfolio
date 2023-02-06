@@ -4,11 +4,7 @@ import "./pages.css";
 import css from "./home.module.css";
 
 import DImgC from "../components/diagonal_img_content/d_img_c.js";
-import Footer from "../components/PageFooter/footer.js";
-
 import Me from "../images/Me.jpg";
-import LinkedInImage from "../images/LinkedIn.png";
-const GmailLogo = "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg";
 
 class Home extends React.Component {
     constructor(props) { super(props); }
@@ -19,10 +15,10 @@ class Home extends React.Component {
                     <h1> Trenton Choate </h1>
                     <h2> Fullstack Developer </h2>
                 </div>
-                <DImgC src={Me}className={css.about_container}>
-                    <div className={css.DimgC_content}>
+                <DImgC src={Me} className={css.about_container}>
+                    <div className={css.about_content}>
                         <h1> About Me </h1>
-                        <h2> Associate Application Developer @IBM </h2>
+                        <h2> Fullstack Web Developer </h2>
                         <h3> Graduated Bossier Parish Community College </h3>
                         <h4> Associate of Applied Science, Cyber Technology </h4>
                         <h3>{"Attended Louisiana Tech University (Junior, Unfinished)"}</h3>
@@ -34,21 +30,18 @@ class Home extends React.Component {
                         <a href="https://www.credly.com/users/trenton-choate"> View Credentials </a>
                     </div>
                 </DImgC>
-                <div style={{height: "400px", width: "100%"}}></div>
-                <Footer items={
-                    [
-                        {
-                            href:"https://www.linkedin.com/in/trenton44/",
-                            src: LinkedInImage,
-                            description: "LinkedIn"
-                        },
-                        {
-                            href: "mailto:tchoate44@gmail.com",
-                            src: GmailLogo,
-                            description: "tchoate44@gmail.com"
-                        }
-                    ]
-                }/>
+                <div className={css.spacer}></div>
+                <footer className={css.footer_content}>
+                    <div className={css.contacts_content}>
+                        <h1> Socials </h1>
+                        <a href="https://www.linkedin.com/in/trenton44/" style={{ backgroundColor: "blue" }}>LinkedIn</a>
+                        <a href="mailto:tchoate44@gmail.com" style={{ backgroundColor: "darkred" }}>Gmail</a>
+                    </div>
+                    <div className={css.background_credit} style={{ backgroundColor: "lightpurple" }}>
+                        <a href="https://commons.wikimedia.org/wiki/File:Usa-world-trade-center-skyscrapers-reflection-night-skyline-cityscape.jpg">Background Image Credit: <span style={{ color: "purple"}}>Kozak4512</span></a>
+                        <a style={{ color: "purple" }} href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+                    </div>
+                </footer>
             </div>
             
         );
