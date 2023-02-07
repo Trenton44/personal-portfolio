@@ -8,7 +8,7 @@ class HiddenBlock extends React.Component {
     }
     render(){
         return(
-        <div className={css.component_container+" "+this.props.className}>
+        <div onMouseUp={() => window.location = this.props.href } className={css.component_container+" "+this.props.className}>
             <div className={css.visible_container}>
                 <img className={css.visible_image} src={this.props.src} />
             </div>
@@ -22,4 +22,4 @@ class HiddenBlock extends React.Component {
     }
 }
 
-export default HiddenBlock;
+export default HiddenBlock; 
