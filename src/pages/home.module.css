@@ -75,6 +75,11 @@
     background-color: black;
 }
 @media (max-width: 800px) {
+    .about_container { height: auto; padding-bottom: 1em;}
+    .about_content {
+        justify-content: flex-start;
+        align-items: center;
+    }
     .footer_content, .contacts_content {
         flex-direction: column !important;
     }

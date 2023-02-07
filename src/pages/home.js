@@ -4,7 +4,7 @@ import "./pages.css";
 import css from "./home.module.css";
 
 import DImgC from "../components/diagonal_img_content/d_img_c.js";
-import Me from "../images/Me.jpg";
+import Me from "../images/landscapeMe.png";
 
 class Home extends React.Component {
     constructor(props) { super(props); }
