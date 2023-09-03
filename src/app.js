@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "./components/navigation/navigation.js";
 import Home from "./pages/home.js";
 import Projects from "./pages/projects.js";
-import Resume from "./pages/Resume/resume.js";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
